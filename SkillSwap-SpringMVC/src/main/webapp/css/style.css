@@ -1,0 +1,474 @@
+/* =========================================
+   SKILLSWAP - MODERN UI
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f7fc;
+    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.navbar {
+    background: #172554 !important;
+    min-height: 64px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15);
+}
+
+.navbar .container {
+    max-width: 1180px;
+}
+
+.navbar-brand {
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.navbar .text-white {
+    font-size: 0.95rem;
+}
+
+.navbar .btn {
+    border-radius: 8px;
+    padding: 6px 13px;
+    font-size: 0.85rem;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.container {
+    max-width: 1180px;
+}
+
+
+/* =========================================
+   HERO / WELCOME
+   ========================================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #1d4ed8,
+        #4f46e5
+    );
+
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 32px !important;
+
+    border: none;
+
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.20);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    right: -60px;
+    top: -70px;
+
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.hero h2 {
+    position: relative;
+    z-index: 1;
+
+    font-size: 1.9rem;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.hero p {
+    position: relative;
+    z-index: 1;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 1rem;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.card {
+    border: 1px solid #e5eaf2;
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.09);
+}
+
+.card h5 {
+    color: #172554;
+
+    font-size: 1.15rem;
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+.card p.text-muted {
+    font-size: 0.92rem;
+}
+
+
+/* =========================================
+   FORM LABELS
+   ========================================= */
+
+.form-label {
+    color: #374151;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================================
+   INPUTS
+   ========================================= */
+
+.form-control,
+.form-select {
+    min-height: 42px;
+
+    border: 1px solid #d8dee9;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #374151;
+
+    font-size: 0.92rem;
+
+    padding: 9px 12px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-control::placeholder {
+    color: #9ca3af;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #4f46e5;
+
+    box-shadow:
+        0 0 0 3px rgba(79, 70, 229, 0.10);
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.btn {
+    border-radius: 9px;
+
+    font-size: 0.88rem;
+    font-weight: 600;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background: #2563eb;
+    border-color: #2563eb;
+
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.18);
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.btn-outline-primary {
+    color: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-outline-primary:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-outline-danger {
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   ADD SKILL CARD
+   ========================================= */
+
+.col-lg-4 .card:first-child {
+    border-top: 4px solid #2563eb;
+}
+
+
+/* =========================================
+   MY SKILLS
+   ========================================= */
+
+.skill {
+    display: inline-block;
+
+    margin: 3px;
+
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MATCH CARDS
+   ========================================= */
+
+.match {
+    height: 100%;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e8f0;
+
+    border-radius: 15px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.match:hover {
+    transform: translateY(-4px);
+
+    border-color: #b8c7f0;
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.10);
+}
+
+.match h5 {
+    color: #172554;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 7px;
+}
+
+.match p {
+    color: #6b7280;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   BADGES
+   ========================================= */
+
+.badge {
+    border-radius: 20px;
+
+    padding: 6px 10px;
+
+    font-size: 0.74rem;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   REQUEST BOXES
+   ========================================= */
+
+.border.rounded {
+    border: 1px solid #e2e8f0 !important;
+
+    border-radius: 12px !important;
+
+    background: #fafbfe;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.border.rounded:hover {
+    background: #f5f8ff;
+
+    border-color: #cbd5e1 !important;
+}
+
+
+/* =========================================
+   SECTION SPACING
+   ========================================= */
+
+.row.g-4 {
+    align-items: flex-start;
+}
+
+
+/* =========================================
+   ALERT
+   ========================================= */
+
+.alert {
+    border: none;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+
+
+/* =========================================
+   SEARCH RESULTS HEADER
+   ========================================= */
+
+.card > h5:first-child {
+    letter-spacing: 0.1px;
+}
+
+
+/* =========================================
+   LINKS
+   ========================================= */
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 991px) {
+
+    .hero {
+        padding: 26px !important;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        min-height: auto;
+        padding: 12px 0;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .text-white {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 23px !important;
+    }
+
+    .hero h2 {
+        font-size: 1.45rem;
+    }
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .match {
+        padding: 16px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar .btn {
+        margin-left: 4px !important;
+        margin-top: 5px;
+    }
+
+    .hero {
+        padding: 20px !important;
+        border-radius: 15px;
+    }
+
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+}
